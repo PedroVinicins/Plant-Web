@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/script/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda Plant</title>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <div class="seu-inventory">
+            <h4 id="dinheiro">Seu Dinheiro: $1000</h4>
+            <h4 id="Nivel-do-usuario">Seu Nível: 0</h4>
+            <h4 id="milho">Milho: 0</h4>
+            <h4 id="algodao">Algodão: 0</h4>
+            <h4 id="feijao">Feijão: 0</h4>
+            <h4 id="arroz">Arroz: 0</h4>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <h3 id="Ferramentas-Title">Ferramentas</h3> <!-- Corrigido o ID duplicado -->
+                    <ul>
+                        <li><button id="evoluir-nivel">Evoluir Nível - 100 doláres por nível</button></li>
+                        <li><button id="crescer-fazenda">Crescer a Fazenda - 1000 doláres</button></li>
+                        <li>
+                            <label for="Ferramentas-Select">Escolha uma ferramenta:</label>
+                            <select id="Ferramentas-Select"> <!-- Corrigido o ID duplicado -->
+                                <option value="maquinas">Trator - Reduz o tempo de coleta em -40s</option>
+                                <option value="ouro">Mina de ouro - Dá 150 Moedas a cada 20 segundos</option>
+                                <option value="ferro">Mina de ferro - Ajuda a proteger a Fazenda</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <li><button id="Maquinas">Máquinas</button></li>
+                <li><button id="plant-Reiniciar">Reiniciar</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="farm-grid">
+        <div class="tile" data-index="0"></div>
+        <div class="tile" data-index="1"></div>
+        <div class="tile" data-index="2"></div>
+        <div class="tile" data-index="3"></div>
+        <div class="tile" data-index="4"></div>
+        <div class="tile" data-index="5"></div>
+        <div class="tile" data-index="6"></div>
+        <div class="tile" data-index="7"></div>
+        <div class="tile" data-index="8"></div>
+        <div class="tile" data-index="9"></div>
+        <div class="tile" data-index="10"></div>
+        <div class="tile" data-index="11"></div>
+        <div class="tile" data-index="12"></div>
+        <div class="tile" data-index="13"></div>
+        <div class="tile" data-index="14"></div>
+        <div class="tile" data-index="15"></div>
+        <div class="tile" data-index="16"></div>
+        <div class="tile" data-index="17"></div>
+        <div class="tile" data-index="18"></div>
+        <div class="tile" data-index="19"></div>
+        <div class="tile" data-index="20"></div>
+        <div class="tile" data-index="21"></div>
+        <div class="tile" data-index="22"></div>
+        <div class="tile" data-index="23"></div>
+        <div class="tile" data-index="24"></div>
+        <div class="tile" data-index="25"></div>
+        <div class="tile" data-index="26"></div>
+        <div class="tile" data-index="27"></div>
+        <div class="tile" data-index="28"></div>
+        <div class="tile" data-index="29"></div>
+        <div class="tile" data-index="30"></div>
+        <div class="tile" data-index="31"></div>
+        <div class="tile" data-index="32"></div>
+        <div class="tile" data-index="33"></div>
+        <div class="tile" data-index="34"></div>
+        <div class="tile" data-index="35"></div>
+        <div class="tile" data-index="36"></div>
+        <div class="tile" data-index="37"></div>
+        <div class="tile" data-index="38"></div>
+        <div class="tile" data-index="39"></div>
+        <div class="tile" data-index="40"></div>
+        <div class="tile" data-index="41"></div>
+        <div class="tile" data-index="42"></div>
+        <div class="tile" data-index="43"></div>
+        <div class="tile" data-index="44"></div>
+        <div class="tile" data-index="45"></div>
+        <div class="tile" data-index="46"></div>
+        <div class="tile" data-index="47"></div>
+        <div class="tile" data-index="48"></div>
+        <div class="tile" data-index="49"></div>
+        <div class="Casa">
+            <h3>Casa</h3>
+        </div>
+    </div>
+
+    <select id="crop-select">
+        <option value="milho">Milho</option>
+        <option value="algodao">Algodão</option>
+        <option value="feijao">Feijão</option>
+        <option value="arroz">Arroz</option>
+    </select>
+    <h1>Clique para plantar</h1>
+    <button id="plant-Coleta">Coletar tudo</button>
+    <button id="plant-Vender">Vender tudo!</button>
+    
+</body>
+</html>
